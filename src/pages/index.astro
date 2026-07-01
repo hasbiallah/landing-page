@@ -307,9 +307,14 @@ import { GA4_ID } from '../config';
     </div>
 
     <!-- WA Click Tracking (console.log only for now; GA4 event in separate slice) -->
+  </body>
+</html>
+    <!-- GA4 Event Tracking -->
     <script>
-      import { attachWaTracking } from '../lib/wa';
+      import { attachWaTracking, attachScrollTracking, attachTimeTracking } from '../lib/wa';
       attachWaTracking();
+      attachScrollTracking();
+      attachTimeTracking();
     </script>
   </body>
 </html>
