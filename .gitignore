@@ -1,12 +1,9 @@
-.agents
+.agents/
 skills-lock.json
 AGENTS.md
 CONTEXT.md
 PRD.md
-docs/node_modules
-dist
-.astro
-.DS_Store
+docs/
 
 node_modules/
 dist/
