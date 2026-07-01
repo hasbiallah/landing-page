@@ -19,6 +19,18 @@
         },
       }
     </script>
+    <!-- GA4 Analytics — replace GA4_ID to activate -->
+    <script>
+      var GA4_ID = 'G-XXXXXXXXXX';
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', GA4_ID);
+      var _s = document.createElement('script');
+      _s.async = true;
+      _s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA4_ID;
+      document.head.appendChild(_s);
+    </script>
   </head>
   <body class="font-sans bg-white text-gray-900 pb-20 md:pb-0">
 
@@ -283,5 +295,31 @@
       </a>
     </div>
 
+    <!-- GA4 Event Tracking -->
+    <script>
+      // wa_click: fires on every CTA button click
+      document.querySelectorAll('[data-wa-location]').forEach(function(el) {
+        el.addEventListener('click', function() {
+          gtag('event', 'wa_click', { location: el.getAttribute('data-wa-location') });
+        });
+      });
+
+      // scroll_depth: fires once when user scrolls past 75% of page height
+      var scrollFired = false;
+      window.addEventListener('scroll', function() {
+        if (scrollFired) return;
+        var scrolled = window.scrollY + window.innerHeight;
+        var total = document.documentElement.scrollHeight;
+        if (scrolled / total >= 0.75) {
+          scrollFired = true;
+          gtag('event', 'scroll_depth', { depth_percent: 75 });
+        }
+      }, { passive: true });
+
+      // time_on_page: fires once after 60 seconds
+      setTimeout(function() {
+        gtag('event', 'time_on_page', { seconds: 60 });
+      }, 60000);
+    </script>
   </body>
 </html>
