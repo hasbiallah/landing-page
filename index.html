@@ -23,37 +23,265 @@
   <body class="font-sans bg-white text-gray-900 pb-20 md:pb-0">
 
     <!-- SECTION: Hero -->
-    <section id="hero">
-      <!-- TODO: headline, subheadline, mockup HP, CTA utama, social proof kecil -->
+    <section id="hero" class="bg-gray-900 text-white px-4 py-16 md:py-24 text-center">
+      <div class="max-w-xl mx-auto">
+        <p class="text-wa text-sm font-semibold uppercase tracking-widest mb-3">hasbi.dev</p>
+        <h1 class="text-3xl md:text-5xl font-extrabold leading-tight mb-4">
+          Bot WhatsApp &amp; Website UMKM<br class="hidden md:block" />
+          <span class="text-wa">Jadi 1 Hari.</span>
+        </h1>
+        <p class="text-gray-300 text-base md:text-lg mb-8">
+          Auto balas order, tampil profesional — tanpa ribet ngoding.<br />
+          Kak tinggal chat, sisanya biar kita yang urus.
+        </p>
+
+        <!-- Mockup HP -->
+        <div class="mx-auto mb-8 w-44 md:w-52 rounded-3xl border-4 border-wa bg-gray-800 overflow-hidden shadow-2xl">
+          <div class="bg-wa px-3 py-2 flex items-center gap-2">
+            <div class="w-8 h-8 rounded-full bg-white/30 flex items-center justify-center text-xs font-bold text-white">H</div>
+            <div class="text-left">
+              <p class="text-white text-xs font-semibold leading-none">hasbi.dev Bot</p>
+              <p class="text-green-100 text-xs">online</p>
+            </div>
+          </div>
+          <div class="px-3 py-4 space-y-2 text-left text-xs">
+            <div class="bg-white/10 rounded-lg rounded-tl-none px-3 py-2 text-gray-200 max-w-[80%]">Halo kak, ada yang bisa dibantu? 😊</div>
+            <div class="bg-wa rounded-lg rounded-tr-none px-3 py-2 text-white ml-auto max-w-[80%] text-right">Mau pesan kue kak!</div>
+            <div class="bg-white/10 rounded-lg rounded-tl-none px-3 py-2 text-gray-200 max-w-[80%]">Siap kak! Pilih varian: Coklat, Vanilla, atau Red Velvet? 🎂</div>
+          </div>
+        </div>
+
+        <a
+          href="https://wa.me/6281286057569?text=Halo%20kak%20mau%20tanya%20layanan%20hasbi.dev"
+          class="inline-block bg-wa hover:bg-wa-dark text-white font-bold text-lg px-8 py-4 rounded-full transition-colors duration-200 shadow-lg"
+          data-wa-location="hero"
+        >
+          💬 Chat WA Sekarang
+        </a>
+        <p class="mt-4 text-gray-400 text-sm">Gratis konsultasi · Balas dalam &lt;1 jam</p>
+      </div>
     </section>
 
     <!-- SECTION: Pain → Solusi -->
-    <section id="pain-solusi">
-      <!-- TODO: 3 card masalah → solusi -->
+    <section id="pain-solusi" class="px-4 py-16 bg-white">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-extrabold text-center mb-2">Masalah yang Kak Rasakan Sehari-hari</h2>
+        <p class="text-center text-gray-500 mb-10">Dan gimana hasbi.dev mengatasinya.</p>
+        <div class="grid gap-6 md:grid-cols-3">
+
+          <div class="rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+            <div class="bg-red-50 px-5 py-4">
+              <p class="text-2xl mb-1">😩</p>
+              <p class="font-bold text-gray-800 text-sm">Chat numpuk, nggak sempat balas</p>
+              <p class="text-gray-500 text-xs mt-1">Pembeli nanya, nggak dibalas, kabur ke kompetitor.</p>
+            </div>
+            <div class="bg-green-50 px-5 py-4">
+              <p class="text-wa text-lg mb-1">✅</p>
+              <p class="font-semibold text-gray-800 text-sm">Bot balas otomatis 24/7</p>
+              <p class="text-gray-500 text-xs mt-1">Pesan masuk langsung dibalas — jam 3 pagi sekalipun.</p>
+            </div>
+          </div>
+
+          <div class="rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+            <div class="bg-red-50 px-5 py-4">
+              <p class="text-2xl mb-1">📵</p>
+              <p class="font-bold text-gray-800 text-sm">Nggak punya website, kelihatan nggak serius</p>
+              <p class="text-gray-500 text-xs mt-1">Calon pembeli ragu bayar ke toko yang nggak punya online presence.</p>
+            </div>
+            <div class="bg-green-50 px-5 py-4">
+              <p class="text-wa text-lg mb-1">✅</p>
+              <p class="font-semibold text-gray-800 text-sm">Landing page profesional dalam 1 hari</p>
+              <p class="text-gray-500 text-xs mt-1">Kak langsung punya link yang bisa dishare ke pembeli kapanpun.</p>
+            </div>
+          </div>
+
+          <div class="rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+            <div class="bg-red-50 px-5 py-4">
+              <p class="text-2xl mb-1">🔁</p>
+              <p class="font-bold text-gray-800 text-sm">Jawab pertanyaan yang sama terus-terusan</p>
+              <p class="text-gray-500 text-xs mt-1">"Harga berapa kak?" "Bisa COD?" "Kapan ready?"</p>
+            </div>
+            <div class="bg-green-50 px-5 py-4">
+              <p class="text-wa text-lg mb-1">✅</p>
+              <p class="font-semibold text-gray-800 text-sm">Auto-Reply untuk FAQ produk</p>
+              <p class="text-gray-500 text-xs mt-1">Bot jawab sendiri. Kak fokus ke yang penting.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </section>
 
     <!-- SECTION: Paket & Harga -->
-    <section id="paket">
-      <!-- TODO: 3 kolom paket, FYP di-highlight -->
+    <section id="paket" class="px-4 py-16 bg-gray-50">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-extrabold text-center mb-2">Pilih Paket yang Pas buat Kak</h2>
+        <p class="text-center text-gray-500 mb-10">Semua selesai dalam 1 hari kerja.</p>
+        <div class="grid gap-6 md:grid-cols-3 items-start">
+
+          <!-- Paket Hemat -->
+          <div class="bg-white rounded-2xl border border-gray-200 shadow-sm p-6 flex flex-col">
+            <p class="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-1">Hemat</p>
+            <p class="text-3xl font-extrabold text-gray-900 mb-1">Rp299rb</p>
+            <p class="text-gray-500 text-sm mb-6">Cocok untuk UMKM yang baru mulai.</p>
+            <ul class="space-y-2 text-sm text-gray-700 mb-8 flex-1">
+              <li class="flex gap-2"><span class="text-wa">✓</span> Bot WhatsApp Auto-Reply</li>
+              <li class="flex gap-2"><span class="text-wa">✓</span> Hingga 5 kata kunci</li>
+              <li class="flex gap-2"><span class="text-wa">✓</span> Setup &amp; live dalam 1 hari</li>
+              <li class="flex gap-2 text-gray-400"><span>✗</span> Landing page</li>
+              <li class="flex gap-2 text-gray-400"><span>✗</span> Katalog produk digital</li>
+            </ul>
+            <a
+              href="https://wa.me/6281286057569?text=Halo%20kak%20mau%20tanya%20layanan%20hasbi.dev"
+              class="block text-center border-2 border-wa text-wa font-bold py-3 rounded-full hover:bg-wa hover:text-white transition-colors duration-200"
+              data-wa-location="paket-hemat"
+            >
+              Pilih Paket Ini
+            </a>
+          </div>
+
+          <!-- Paket FYP (highlighted) -->
+          <div class="bg-gray-900 rounded-2xl border-2 border-wa shadow-xl p-6 flex flex-col relative">
+            <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-wa text-white text-xs font-bold px-4 py-1 rounded-full">⭐ Paling Laku</span>
+            <p class="text-sm font-semibold text-wa uppercase tracking-wide mb-1">FYP</p>
+            <p class="text-3xl font-extrabold text-white mb-1">Rp990rb</p>
+            <p class="text-gray-400 text-sm mb-6">Bot + Landing Page. Paket komplit untuk jualan online.</p>
+            <ul class="space-y-2 text-sm text-gray-300 mb-8 flex-1">
+              <li class="flex gap-2"><span class="text-wa">✓</span> Bot WhatsApp Auto-Reply</li>
+              <li class="flex gap-2"><span class="text-wa">✓</span> Hingga 20 kata kunci</li>
+              <li class="flex gap-2"><span class="text-wa">✓</span> Landing page profesional</li>
+              <li class="flex gap-2"><span class="text-wa">✓</span> Katalog produk digital</li>
+              <li class="flex gap-2"><span class="text-wa">✓</span> Setup &amp; live dalam 1 hari</li>
+            </ul>
+            <a
+              href="https://wa.me/6281286057569?text=Halo%20kak%20mau%20tanya%20layanan%20hasbi.dev"
+              class="block text-center bg-wa hover:bg-wa-dark text-white font-bold py-3 rounded-full transition-colors duration-200"
+              data-wa-location="paket-fyp"
+            >
+              Chat WA Sekarang
+            </a>
+          </div>
+
+          <!-- Paket Cuan -->
+          <div class="bg-white rounded-2xl border border-gray-200 shadow-sm p-6 flex flex-col">
+            <p class="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-1">Cuan</p>
+            <p class="text-3xl font-extrabold text-gray-900 mb-1">Rp2.5jt</p>
+            <p class="text-gray-500 text-sm mb-6">Solusi lengkap untuk bisnis yang serius scale up.</p>
+            <ul class="space-y-2 text-sm text-gray-700 mb-8 flex-1">
+              <li class="flex gap-2"><span class="text-wa">✓</span> Bot WhatsApp tanpa batas kata kunci</li>
+              <li class="flex gap-2"><span class="text-wa">✓</span> Landing page premium + copywriting</li>
+              <li class="flex gap-2"><span class="text-wa">✓</span> Katalog produk &amp; pembayaran digital</li>
+              <li class="flex gap-2"><span class="text-wa">✓</span> Broadcast pesan ke pelanggan</li>
+              <li class="flex gap-2"><span class="text-wa">✓</span> Revisi hingga puas</li>
+            </ul>
+            <a
+              href="https://wa.me/6281286057569?text=Halo%20kak%20mau%20tanya%20layanan%20hasbi.dev"
+              class="block text-center border-2 border-gray-300 text-gray-700 font-bold py-3 rounded-full hover:border-wa hover:text-wa transition-colors duration-200"
+              data-wa-location="paket-cuan"
+            >
+              Pilih Paket Ini
+            </a>
+          </div>
+
+        </div>
+      </div>
     </section>
 
     <!-- SECTION: Cara Kerja -->
-    <section id="cara-kerja">
-      <!-- TODO: 3 langkah visual -->
+    <section id="cara-kerja" class="px-4 py-16 bg-white">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-2xl md:text-3xl font-extrabold mb-2">Cara Kerjanya Simpel Banget</h2>
+        <p class="text-gray-500 mb-12">Kak nggak perlu paham teknis apapun.</p>
+        <div class="grid gap-8 md:grid-cols-3">
+
+          <div class="flex flex-col items-center">
+            <div class="w-14 h-14 rounded-full bg-wa/10 flex items-center justify-center text-2xl mb-4">💬</div>
+            <div class="w-8 h-8 rounded-full bg-wa text-white font-extrabold text-sm flex items-center justify-center mb-3">1</div>
+            <h3 class="font-bold text-gray-900 mb-1">Chat WA</h3>
+            <p class="text-gray-500 text-sm">Kak cerita kebutuhan bisnis dan produk yang dijual. Kita diskusi santai via WhatsApp.</p>
+          </div>
+
+          <div class="flex flex-col items-center">
+            <div class="w-14 h-14 rounded-full bg-wa/10 flex items-center justify-center text-2xl mb-4">💳</div>
+            <div class="w-8 h-8 rounded-full bg-wa text-white font-extrabold text-sm flex items-center justify-center mb-3">2</div>
+            <h3 class="font-bold text-gray-900 mb-1">Bayar DP 50%</h3>
+            <p class="text-gray-500 text-sm">Deal paket, DP 50% dulu. Sisa 50% dibayar setelah Kak lihat hasilnya dan puas.</p>
+          </div>
+
+          <div class="flex flex-col items-center">
+            <div class="w-14 h-14 rounded-full bg-wa/10 flex items-center justify-center text-2xl mb-4">🚀</div>
+            <div class="w-8 h-8 rounded-full bg-wa text-white font-extrabold text-sm flex items-center justify-center mb-3">3</div>
+            <h3 class="font-bold text-gray-900 mb-1">Jadi 1 Hari</h3>
+            <p class="text-gray-500 text-sm">Bot dan landing page Kak langsung live. Bisa langsung dishare ke pembeli hari itu juga.</p>
+          </div>
+
+        </div>
+      </div>
     </section>
 
     <!-- SECTION: FAQ -->
-    <section id="faq">
-      <!-- TODO: 3 pertanyaan singkat -->
+    <section id="faq" class="px-4 py-16 bg-gray-50">
+      <div class="max-w-2xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-extrabold text-center mb-10">Pertanyaan yang Sering Ditanya</h2>
+        <div class="space-y-4">
+
+          <details class="bg-white rounded-2xl border border-gray-200 shadow-sm group">
+            <summary class="flex justify-between items-center px-6 py-4 cursor-pointer font-semibold text-gray-800 list-none">
+              Berapa kali bisa revisi?
+              <span class="text-wa text-xl group-open:rotate-45 transition-transform duration-200">+</span>
+            </summary>
+            <p class="px-6 pb-5 text-gray-600 text-sm">Paket Hemat dan FYP: revisi 1x. Paket Cuan: revisi sampai Kak puas. Biasanya langsung oke karena kita diskusi dulu sebelum mulai ngerjain.</p>
+          </details>
+
+          <details class="bg-white rounded-2xl border border-gray-200 shadow-sm group">
+            <summary class="flex justify-between items-center px-6 py-4 cursor-pointer font-semibold text-gray-800 list-none">
+              Ada garansi kalau nggak sesuai harapan?
+              <span class="text-wa text-xl group-open:rotate-45 transition-transform duration-200">+</span>
+            </summary>
+            <p class="px-6 pb-5 text-gray-600 text-sm">Ada. Kalau hasil nggak sesuai kesepakatan awal, kita revisi tanpa biaya tambahan. Pelunasan 50% baru dibayar setelah Kak lihat hasilnya dan setuju.</p>
+          </details>
+
+          <details class="bg-white rounded-2xl border border-gray-200 shadow-sm group">
+            <summary class="flex justify-between items-center px-6 py-4 cursor-pointer font-semibold text-gray-800 list-none">
+              Cara bayarnya gimana?
+              <span class="text-wa text-xl group-open:rotate-45 transition-transform duration-200">+</span>
+            </summary>
+            <p class="px-6 pb-5 text-gray-600 text-sm">Transfer bank, QRIS, atau GoPay/OVO. DP 50% sebelum mulai, sisa 50% setelah selesai dan Kak puas. Semua dikonfirmasi via WhatsApp.</p>
+          </details>
+
+        </div>
+      </div>
     </section>
 
     <!-- SECTION: CTA Footer -->
-    <section id="cta-footer">
-      <!-- TODO: tombol penutup -->
+    <section id="cta-footer" class="bg-gray-900 text-white px-4 py-16 md:py-24 text-center">
+      <div class="max-w-xl mx-auto">
+        <h2 class="text-2xl md:text-4xl font-extrabold leading-tight mb-4">
+          Siap Bikin Bisnis Kak<br />
+          <span class="text-wa">Makin Profesional?</span>
+        </h2>
+        <p class="text-gray-400 mb-8">Chat sekarang, gratis konsultasi. Kita bantu dari nol sampai live.</p>
+        <a
+          href="https://wa.me/6281286057569?text=Halo%20kak%20mau%20tanya%20layanan%20hasbi.dev"
+          class="inline-block bg-wa hover:bg-wa-dark text-white font-bold text-xl px-10 py-5 rounded-full transition-colors duration-200 shadow-lg"
+          data-wa-location="cta-footer"
+        >
+          💬 Chat WA Sekarang
+        </a>
+        <p class="mt-6 text-gray-500 text-sm">hasbi.dev · Bot WhatsApp &amp; Website UMKM</p>
+      </div>
     </section>
 
     <!-- STICKY CTA (mobile only) -->
-    <!-- TODO: fixed bottom bar -->
+    <div class="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-gray-900 border-t border-gray-700 px-4 py-3">
+      <a
+        href="https://wa.me/6281286057569?text=Halo%20kak%20mau%20tanya%20layanan%20hasbi.dev"
+        class="flex items-center justify-center gap-2 bg-wa hover:bg-wa-dark text-white font-bold text-base w-full py-3 rounded-full transition-colors duration-200"
+        data-wa-location="sticky"
+      >
+        💬 Mau Bot-nya Juga? Chat Sekarang
+      </a>
+    </div>
 
   </body>
 </html>
